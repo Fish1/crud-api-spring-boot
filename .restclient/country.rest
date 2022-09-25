@@ -1,0 +1,27 @@
+POST http://localhost:8080/country
+Content-Type: application/json
+
+{
+  "name": "USA"
+}
+
+###
+
+GET http://localhost:8080/countries
+
+###
+
+GET http://localhost:8080/countries/2
+
+###
+
+PUT http://localhost:8080/countries/2
+Content-Type: application/json
+
+{
+  "name": "Germany"
+}
+
+###
+
+DELETE http://localhost:8080/countries/3
