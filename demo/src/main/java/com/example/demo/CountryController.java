@@ -19,9 +19,9 @@ public class CountryController {
 
   /* Create country */
   @PostMapping("/country")
-  private int saveCountry(@RequestBody Country country) {
+  private Country saveCountry(@RequestBody Country country) {
     countryService.saveOrUpdate(country);
-    return country.getId();
+    return country;
   }
 
   /* Get all countries */
@@ -43,7 +43,6 @@ public class CountryController {
     countryService.saveOrUpdate(country);
     return country;
   }
-
 
   /* Delete country */
   @DeleteMapping("/countries/{id}")

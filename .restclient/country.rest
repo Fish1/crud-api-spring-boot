@@ -2,7 +2,7 @@ POST http://localhost:8080/country
 Content-Type: application/json
 
 {
-  "name": "USA"
+  "name": "France"
 }
 
 ###
